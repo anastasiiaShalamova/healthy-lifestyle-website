@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Benefits</title>
+        
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge,chrome-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+        rel = "stylesheet">
+     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     
+
+        <!-- CSS -->
+     <style>
+
+      main {
+                margin-left: 270px;
+            }
+       
+      .ui-widget-header,.ui-state-default {
+       background:#f5efe5;
+        font-size: 28px;
+        color: #b38b40;
+        text-align: center;
+     }
+
+     .ui-resizable {
+       background:white;
+       border-color: lightsalmon;
+       color: #b38b40;
+       text-align: center;
+     }​
+
+     main {
+             margin-left: 270px;
+         }
+    
+
+  </style>
+  
+  <!-- Javascript -->
+  <script>
+     $(function() {
+        $( "#dialog-1" ).dialog({
+           autoOpen: false,  
+        });
+        $( "#opener" ).click(function() {
+           $( "#dialog-1" ).dialog( "open" );
+        });
+     });
+  </script>
+
+    </head>
+    <body class = "home">
+
+        <!-- Side navbar -->
+        <div class="sidenav" style="width:18%;">
+           <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt; margin-top: -10pt; margin-left: -1pt;">Heathy Lifestyle</a>
+           <a href="#happines" class = "btwn">Happines</a>
+           <a href="#weightLoss" >Weight Loss</a>
+           <a href="#muscles" >Muscles</a>
+           <a href="#energy" >Energy</a>
+           <a href="#sleep" >Sleep Quality</a>
+       </div>
+         <!-- End of side navbar -->
+
+       <!-- Navbar -->
+       <header class = "header">
+           <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light;">
+               <div class="container-fluid">
+                 <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt;">Heathy Lifestyle</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                           aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                 </button>
+                   <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                       <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                       <li class="nav-item">
+                           <a class="nav-link" href="../main2.html" style="color: #b38b40;">Home</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Healthy Eating</a>
+       
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                           <a class="dropdown-item" href="../Nutrition/diets_main.html">Diets</a>
+                           <a class="dropdown-item" href="../Nutrition/advantages.html">Benefits</a>
+                           <a class="dropdown-item" href="../Nutrition/recepies.html">Meals</a>
+                           </div>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+       
+                           <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                           <a class="dropdown-item" href="benefits.html">Benefits</a>
+                           <a class="dropdown-item" href="video-exercises.html">Video Exercises</a>
+                           </div>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="../calorie/calorie.html" style="color: #b38b40;">Calorie Calculator</a>
+                       </li>
+                       </ul>
+                       <ul class = "navbar-nav ml-auto">
+                        <button id = "opener" class = "btn" style="font-size: 20px; border: 1.5px solid lightsalmon; 
+                        border-radius: 10px; color:#b38b40;">Get Motivation</button>
+                       </ul>
+                   </div>
+               </div>
+             </nav>
+         </header>
+         <!-- End of Navbar -->
+
+         <main> 
+
+            <div class = "container">
+
+              <div class = "di" id = "dialog-1" title="Motivation">
+                A healthy lifestyle can help you thrive throughout your life. 
+                Making healthy choices isn't always easy. It can be 
+                hard to find the time and energy to exercise regularly or 
+                prepare healthy meals. However, your efforts will pay off 
+                in many ways, and for the rest of your life.
+              </div>
+
+                <div class = "lead">
+
+                    
+                    <h1 style = "color: darkorange;text-align: center;"><hr>Benefits of Exercises on General Health<hr></h1>
+
+                    We have all heard it many times before - regular exercise is good for you, and it can help you lose weight. 
+                    But if you are like many Americans, you are busy, you have a sedentary job, and you haven't yet changed your 
+                    exercise habits. The good news is that it's never too late to start. You can start slowly, and find ways to fit 
+                    more physical activity into your life. To get the most benefit, you should try to get the recommended amount 
+                    of exercise for your age. If you can do it, the payoff is that you will feel better, help prevent or control 
+                    many diseases, and likely even live longer.
+                    <br><br>
+                    
+                    <!--accordions-->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div id = "happines" class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5; font-size: 20px;"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          It can make you feel happier
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                              <img style="width: 510px;  border-radius: 30px; min-width: 200px;
+                              height: 360px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                              src = "happy.jpeg" 
+                              alt='you feel happier'>
+                              Exercise has been shown to improve your mood and decrease feelings of depression, anxiety, and stress.
+                              It produces changes in the parts of the brain that regulate stress and anxiety. It can also increase brain 
+                              sensitivity for the hormones serotonin and norepinephrine, which relieve feelings of depression.
+                              Additionally, exercise can increase the production of endorphins, which are known to help produce positive 
+                              feelings and reduce the perception of pain.
+                              <br><br>
+                              Furthermore, exercise has been shown to reduce stress and improve symptoms of anxiety. Interestingly, it 
+                              doesn’t matter how intense your workout is. It seems that your mood can benefit from exercise no matter the 
+                              intensity of the physical activity. In fact, a study in 24 women who had been diagnosed with depression showed 
+                              hat exercise of any intensity significantly decreased feelings of depression.The effects of exercise on mood 
+                              are so powerful that choosing to exercise (or not) even makes a difference over short periods. One review of 
+                              19 studies found that active people who stopped exercising regularly experienced significant increases in 
+                              symptoms of depression and anxiety, even after only a few weeks.
+                              <br>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div id ="weightLoss" class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5; font-size: 20px;"
+                            data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="true" aria-controls="panelsStayOpen-collapsenine">
+                            It Can Help With Weight Loss
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingnine">
+                            <div class="accordion-body">
+                                <img style="width: 470px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: left;padding-right: 35px;padding-bottom: 30px;"
+                                src = "weightLoss.jpeg" 
+                                alt='Weight Loss'>
+                                Some studies have shown that inactivity is a major factor in weight gain and obesity. To understand the effect 
+                                of exercise on weight reduction, it is important to understand the relationship between exercise and energy 
+                                expenditure.
+                                <br><br>
+                                Your body spends energy in three ways:
+                                <br><br>
+
+                                <ul>
+                                    <li>digesting food</li>
+                                    <li>exercising</li>
+                                    <li>maintaining body functions like your heartbeat and breathing</li>
+                                </ul>
+
+                                While dieting, a reduced calorie intake will lower your metabolic rate, which can delay weight loss. On the 
+                                contrary, regular exercise has been shown to increase your metabolic rate, which can burn more calories to 
+                                help you lose weight. Additionally, studies have shown that combining aerobic exercise with resistance 
+                                training can maximize fat loss and muscle mass maintenance, which is essential for keeping the weight off.
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div id ="muscles" class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingtwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5; font-size: 20px;"
+                                data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapsetwo">
+                                It Is Good For Your Muscles and Bones
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingtwo">
+                                <div class="accordion-body">
+                                    <img style="width: 520px;  border-radius: 30px; min-width: 200px;
+                                    height: 360px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                    src = "bones.jpeg" 
+                                    alt='Muscles and Bones'>
+                                    Exercise plays a vital role in building and maintaining strong muscles and bones. Activities like 
+                                    weightlifting can stimulate muscle building when paired with adequate protein intake. This is because 
+                                    exercise helps release hormones that promote the ability of your muscles to absorb amino acids. 
+                                    This helps them grow and reduces their breakdown. As people age, they tend to lose muscle mass and 
+                                    function, which can lead to an increased risk of injury. Practicing regular physical activity is 
+                                    essential to reducing muscle loss and maintaining strength as you age.
+                                    <br><br>
+                                    Also, exercise helps build bone density when you’re younger, in addition to helping prevent osteoporosis 
+                                    later in life. Interestingly, some research suggests that high impact exercise, such as gymnastics or 
+                                    running, or odd impact sports, such as soccer and basketball, may help promote a higher bone density 
+                                    than non-impact sports like swimming and cycling.
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div id = "energy" class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5; font-size: 20px;"
+                                    data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true" aria-controls="panelsStayOpen-collapsefour">
+                                    It Can Increase Your Energy Levels
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingfour">
+                                    <div class="accordion-body">
+                                        <img style="width: 600px;  border-radius: 30px; min-width: 200px;
+                                        height: 290px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                        src = "energy.jpeg" 
+                                        alt='Energy Level'>
+                                        Exercise can be a real energy booster for many people, including those with various medical conditions.
+                                        One older study found that 6 weeks of regular exercise reduced feelings of fatigue for 36 people who had 
+                                        reported persistent fatigue. Furthermore, exercise can significantly increase energy levels for people 
+                                        with chronic fatigue syndrome (CFS) and other serious illnesses.
+                                        <br><br>
+                                        In fact, exercise seems to be more effective at combating CFS than other treatments, including passive 
+                                        therapies like relaxation and stretching or no treatment at all. Additionally, exercise has been shown 
+                                        to increase energy levels in people with other conditions like cancer.
+                                      </div>
+                                  </div>
+                                </div>
+
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div id = "sleep" class="accordion-item">
+                                      <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5; font-size: 20px;"
+                                        data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="true" aria-controls="panelsStayOpen-collapsesix">
+                                        It Can Help With Relaxation and Sleep Quality
+                                        </button>
+                                      </h2>
+                                      <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingsix">
+                                        <div class="accordion-body">
+                                            <img style="width: 570px;  border-radius: 30px; min-width: 200px;
+                                            height: 370px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                            src = "sleep.jpeg" 
+                                            alt='Sleep'>
+                                            Regular exercise can help you relax and sleep better. With regard to sleep quality, the energy 
+                                            depletion that occurs during exercise stimulates recuperative processes during sleep. Moreover, 
+                                            the increase in body temperature that occurs during exercise is thought to improve sleep quality 
+                                            by helping it drop during sleep. Many studies on the effects of exercise on sleep have reached 
+                                            similar conclusions.
+                                            <br><br>
+                                            One review of six studies found that participating in an exercise training program helped improve 
+                                            self-reported sleep quality and reduced sleep latency, which is the amount of time it takes to 
+                                            fall asleep. Another older study showed that 16 weeks of physical activity improved sleep quality 
+                                            and helped 17 people with insomnia sleep longer and more deeply than the control group. It also 
+                                            helped them feel more energized during the day.
+                                            <br><br>
+                                            What’s more, engaging in regular exercise seems to be beneficial for older adults, who are often 
+                                            affected by sleep disorders. You can be flexible with the kind of exercise you choose. It appears 
+                                            that either aerobic exercise alone or aerobic exercise combined with resistance training can both 
+                                            improve sleep quality.
+                                          </div>
+                                      </div>
+                                    </div>
+                      </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </main>
+
+           <!--Scripts-->
+
+         
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+           crossorigin="anonymous"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+           crossorigin="anonymous"></script>
+           <!-- JavaScript Bundle with Popper -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+           integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+           crossorigin="anonymous"></script>
+
+        </body>
+
+        <footer class="page-footer">
+
+          <div class="footer-copyright text-center py-3"> Maintain a Healthy Lifestyle
+            <div>© 2021</div>
+          </div>
+      
+        </footer>
+    
+
+</html>

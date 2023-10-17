@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calorie Calculator</title>
+
+    <link rel="stylesheet" href="../jquery-ui.min.css">
+
+	
+	<script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="../jquery-ui.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
+  
+
+
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+        rel = "stylesheet">
+     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     
+     <!-- CSS -->
+     <style>
+         
+
+        .ui-resizable {
+          background:white;
+          border-color: lightsalmon;
+          color: #b38b40;
+          text-align: center;
+        }
+
+        #loading, #results {
+		  display: none;
+		}
+  
+		#loading {
+		  width: 100%;
+    }
+    
+     </style>
+     
+     <!-- Javascript -->
+     <script>
+        $(function() {
+           $( "#dialog-1" ).dialog({
+              autoOpen: false,  
+           });
+           $( "#opener" ).click(function() {
+              $( "#dialog-1" ).dialog( "open" );
+           });
+        });
+     </script>
+	
+	<script>
+        $(document).ready(function() {
+        	$("#datepicker").datepicker();
+		});
+    </script>
+</head>
+	
+<body>
+	<!-- Navbar -->
+    <header class = "header">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt;">Heathy Lifestyle</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../main2.html" style="color: #b38b40;">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Healthy Eating</a>
+  
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <a class="dropdown-item" href="../Nutrition/diets_main.html">Diets</a>
+                      <a class="dropdown-item" href="../Nutrition/advantages.html">Benefits</a>
+                      <a class="dropdown-item" href="../Nutrition/recepies.html">Meals</a>
+                    </div>
+                </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+  
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <a class="dropdown-item" href="../Sport/benefits.html">Benefits</a>
+                      <a class="dropdown-item" href="../Sport/video-exercises.html">Video Exercises</a>
+                    </div>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="calorie.html" style="color: #b38b40;">Calorie Calculator</a>
+                  </li>
+                </ul>
+                <ul class = "navbar-nav ml-auto">
+                    <button id = "opener" class = "btn" style="font-size: 20px; border: 1.5px solid lightsalmon; 
+                        border-radius: 10px; color:#b38b40;">Get Motivation</button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+	  <!-- End of Navbar -->
+
+	  <div class="container">
+
+      <div class = "di" id = "dialog-1" title="Motivation">
+        A healthy lifestyle can help you thrive throughout your life. 
+        Making healthy choices isn't always easy. It can be 
+        hard to find the time and energy to exercise regularly or 
+        prepare healthy meals. However, your efforts will pay off 
+        in many ways, and for the rest of your life.
+      </div>
+
+			      
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3" style="color: #b38b40;">Calorie Calculator</h1>
+            
+
+            <form id="calorie-form">
+
+              <div class="form-group row">
+                <label for="datepicker" class="col-sm-2 col-form-label" style="color: #b38b40;">Today's date:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="datepicker">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="age" class="col-sm-2 col-form-label" style="color: #b38b40;">Age</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="age" placeholder="Ages 15-80">
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0" style="color: #b38b40;">Gender</legend>
+                  <div class="col-sm-10" id="form-radio">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="male" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="male" style="color: darksalmon;">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="female" name="customRadioInline1" class="custom-control-input" checked="checked">
+                      <label class="custom-control-label" for="female" style="color: darksalmon;">Female</label>
+                    </div>  
+                  </div>
+                </div> 
+              </fieldset> 
+
+              <div class="form-group row">
+                <label for="weight" class="col-sm-2 col-form-label" style="color: #b38b40;">Weight</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="weight" placeholder="In kilograms">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="height" class="col-sm-2 col-form-label" style="color: #b38b40;">Height</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="height" placeholder="In centimeters">
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <legend class="col-form-label col-sm-2 pt-0" style="color: #b38b40;">Activity</legend>
+                <select class="custom-select col-sm-10" id="list">
+                  <option selected value="1">Sedentary (little or no exercise)</option>
+                  <option value="2">Lightly active (light exercise/sports 1-3 days/week)</option>
+                  <option value="3">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                  <option value="4">Very active (hard exercise/sports 6-7 days a week)</option>
+                  <option value="5">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Calculate" style="background-color: #f5efe5; font-size: 20px; border: 1.5px solid lightsalmon; 
+                border-radius: 10px; color:#b38b40;" class="btn btn-warning btn-block">
+              </div>
+
+            </form>
+
+            <div id="loading">
+              <img src="Loading.gif" alt="">
+            </div>
+
+            <div id="results" class="pt-4">
+              <h5 style="color: #b38b40;">Total Calories</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="number" class="form-control" id="total-calories" disabled>
+                </div>
+              </div>                       
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+
+      <br>
+        
+    </div>
+	  
+
+
+	 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	 
+	 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	 <script src="calories.js"></script>
+</body>
+<footer class="page-footer">
+
+  <div class="footer-copyright text-center py-3"> Maintain a Healthy Lifestyle
+    <div>© 2021</div>
+  </div>
+
+</footer>
+</html>

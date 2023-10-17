@@ -1,0 +1,104 @@
+html, body {
+    font-family: "Comic Sans";
+}
+
+a {
+    text-decoration: none;
+    color: #b38b40;
+    font-weight: 500;
+}
+
+.navbar-brand{
+    font-family: "Pasifico", cursive;
+    font-size: 3rem;
+}
+
+.dropdown-menu a:hover {
+    color: darksalmon;
+}
+
+.dropdown-menu{
+    color: #b38b40;
+}
+
+nav li {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+ul li:hover{
+    display: block;
+}
+
+.navbar{
+    background-color: #f5efe5;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    min-width: 50%;
+}
+
+.carousel-inner img {
+    width: 90%;
+    height: 560px;
+    margin: auto;
+}
+
+h2{
+    color:  #b38b40;
+}
+h3 {
+    color: lightsalmon;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 2.8 em;
+    left: 0;
+    background-color:  #f5efe5;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #b38b40;
+    display: block;
+}
+
+.btwn {
+    margin-top: 100pt;
+}
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a:hover {
+    color: lightsalmon;
+}
+
+@media only screen and (min-width: 768px) {
+    iframe{
+      height: 20em;
+    }
+    .card{
+      width: 100%;
+    }
+  }
+
+  footer{
+      text-align: center;
+      font-family: "Pasifico", cursive;
+      color: darkorange;
+  }

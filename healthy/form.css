@@ -1,0 +1,37 @@
+form{
+    padding: 0 2em 1em;
+    margin: 2em auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-left: 270px;
+}
+label {
+    width: 10em;
+    color:  #b38b40;
+    font-size: 20px;
+}
+input, select {
+    width: 20em;
+    margin-bottom: 1em;
+    border-radius: 50px;
+}
+span { 
+    color: darkorange;
+    font-size: 70%; 
+}
+
+.button{
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color:  #b38b40;
+    border-color: darksalmon;
+    border-radius: 50px;
+    color: white;
+}
+
+input[type="text"] { 
+    text-align: center;
+}
+
+
+

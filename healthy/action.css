@@ -1,0 +1,16 @@
+body {
+    background-image: url("thanku.jpeg");
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1 {
+    padding-top: 400px;
+    text-align: center;
+    color: #b38b40;
+    font-family: "Pasifico", cursive;
+}

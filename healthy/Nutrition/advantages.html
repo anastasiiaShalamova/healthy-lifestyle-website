@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Benefits</title>
+
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge,chrome-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+       
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+        rel = "stylesheet">
+     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     
+     <!-- CSS -->
+     <style>
+          main {
+                margin-left: 270px;
+            }
+       
+         .ui-widget-header,.ui-state-default {
+          background:#f5efe5;
+           font-size: 28px;
+           color: #b38b40;
+           text-align: center;
+        }
+
+        .ui-resizable {
+          background:white;
+          border-color: lightsalmon;
+          color: #b38b40;
+          text-align: center;
+        }​
+
+        main {
+                margin-left: 270px;
+            }
+       
+
+     </style>
+     
+     <!-- Javascript -->
+     <script>
+        $(function() {
+           $( "#dialog-1" ).dialog({
+              autoOpen: false,  
+           });
+           $( "#opener" ).click(function() {
+              $( "#dialog-1" ).dialog( "open" );
+           });
+        });
+     </script>
+
+
+
+    </head>
+
+    <body class = "home">
+
+         <!-- Side navbar -->
+         <div class="sidenav" style="width:18%;">
+            <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt; margin-top: -10pt; margin-left: -1pt;">Heathy Lifestyle</a>
+            <a href="#HealthyWeight" class = "btwn">Healthy Weight</a>
+            <a href="#BetterMood" >Better Mood</a>
+            <a href="#HeartHealth" >Heart Health</a>
+            <a href="#ReducedRisk" >Reduced Risk for Cancer</a>
+            <a href="#ImprovedMemory" >Improved Memory</a>
+        </div>
+          <!-- End of side navbar -->
+
+        <!-- Navbar -->
+        <header class = "header">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt;">Heathy Lifestyle</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../main2.html" style="color: #b38b40;">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Healthy Eating</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="../Nutrition/diets_main.html">Diets</a>
+                            <a class="dropdown-item" href="advantages.html">Benefits</a>
+                            <a class="dropdown-item" href="../Nutrition/recepies.html">Meals</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="../Sport/benefits.html">Benefits</a>
+                            <a class="dropdown-item" href="../Sport/video-exercises.html">Video Exercises</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../calorie/calorie.html" style="color: #b38b40;">Calorie Calculator</a>
+                        </li>
+                        </ul>
+                        <ul class = "navbar-nav ml-auto">
+                            <button id = "opener" class = "btn" style="font-size: 20px; border: 1.5px solid lightsalmon; 
+                        border-radius: 10px; color:#b38b40;">Get Motivation</button>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+          </header>
+          <!-- End of Navbar -->
+
+          <main> 
+            <div class = "container">
+
+                <div class = "di" id = "dialog-1" title="Motivation">
+                    A healthy lifestyle can help you thrive throughout your life. 
+                    Making healthy choices isn't always easy. It can be 
+                    hard to find the time and energy to exercise regularly or 
+                    prepare healthy meals. However, your efforts will pay off 
+                    in many ways, and for the rest of your life.
+                  </div>
+
+                <div class = "lead">
+
+                    <h1 style = "color: darkorange;text-align: center;"><hr>The Benefits of Healthy Eating<hr></h1><br>
+
+                    <p>
+                        Eating a healthy diet has many health benefits including maintaining optimal weight, 
+                        preventing disease, and boosting your mood.
+                        <br><br>
+                        In general, healthy eating starts with making good food choices. A healthy diet includes 
+                        nutrient-dense foods from all major food groups including lean proteins, whole grains, 
+                        and healthful fats, and eliminating or significantly reducing processed foods.
+                    </p>
+
+                    <br><h3 id = "HealthyWeight">Healthy Weight</h3>
+
+                    Maintaining a healthy weight can help reduce the risk of many chronic health issues. Being 
+                    overweight or obese, however, significantly increases your chances of serious diseases, including:
+                    <br><br>
+
+                    <img style="width: 620px;  border-radius: 30px; 
+                    height: 400px;float: right;padding-left: 30px;padding-bottom: 30px;"
+                    src = "healthyWeight.jpeg" 
+                    alt='Healthy Weight'>
+
+                    <ul>
+                        <li>Heart disease</li>
+                        <li>Some cancers</li>
+                        <li>Type 2 diabetes</li>
+                        <li>Osteoporosis</li>
+                    </ul>
+
+                    Many healthy foods including vegetables, fruits, and beans are lower in calories and loaded with 
+                    healthful nutrients. Furthermore, they tend to be higher in dietary fiber. Dietary fiber plays 
+                    an important role in weight management. It helps regulate hunger by making you feel full longer, 
+                    and it also helps with elimination.
+                    <br><br>
+                    Additional healthy eating tips for maintaining a healthy weight include:
+                    <br><br>
+
+                    <ul>
+                        <li><strong>Plan your healthy meals:</strong> This reduces your chances of making poor choices or binge eating.</li>
+                        <li><strong>Know how much you eat:</strong> It is very easy to consume more calories than you realize.</li>
+                        <li><strong>Vary your vegetables:</strong> By eating different vegetables, you may feel more satisfied.</li>
+                        <li><strong>Use herbs and spices:</strong> These ingredients add flavor without significantly increasing calories.</li>
+                        <li><strong>Read the nutrition facts labels: Know precisely what's in the foods you eat.</strong></li>
+                    </ul>
+
+                    <br><h3 id = "BetterMood">Better Mood</h3>
+
+                    <img style="width: 620px;  border-radius: 30px; 
+                    height: 360px;float: left;padding-right: 30px;padding-bottom: 30px;"
+                    src = "betterMood.jpeg" 
+                    alt='Better Mood'>
+
+                    Research suggests that there may be a close relationship between diet and mood. In 2016, 
+                    researchers found that diets with a high glycemic load may trigger increased symptoms of 
+                    fatigue and depression.
+                    <br><br>
+                    Foods with a high glycemic load include refined carbohydrates or simple sugars. Examples 
+                    of this type of food include sugary drinks, white breads, biscuits, cookies, and cakes. 
+                    Conversely, vegetables, whole fruit, whole grains and lean proteins have a lower glycemic load.
+                    <br>
+
+                    <br><h3 id = "HeartHealth">Heart Health</h3>
+
+                    According to the US Center for Disease Control and Prevention, heart disease is the leading 
+                    cause of death for adults in the United States. The American Heart Association reports that 
+                    nearly half of all adults in the United States live with some form of heart disease.
+                    <br><br>
+                    Healthy eating and increased physical activity can help prevent high blood pressure or premature 
+                    heart disease. The Dietary Approaches to Stop Hypertension (DASH) diet is recommended as a dietary 
+                    approach to reduce high blood pressure. This diet includes:
+
+                    <br><br>
+
+                    <ul>
+                        <li>Eating plenty of vegetables, fruits, and whole grains.</li>
+                        <li>Choosing fat-free or low-fat dairy products, fish, poultry, beans, nuts, and vegetable oils.</li>
+                        <li>Limiting saturated and trans fat intake, such as fatty meats and full-fat dairy products.</li>
+                        <li>Limiting food or drinks that contain added sugar.</li>
+                        <li>Restricting sodium intake to less than 2,300 milligrams per day and increasing your intake of 
+                            calcium, potassium, and magnesium. Note that 1,500 milligrams of sodium per day is ideal.</li>
+                    </ul>
+
+                    Additional recommendations for heart health include choosing foods high in fiber. Dietary fiber may 
+                    improve blood cholesterol levels and reduce the risk for heart disease and other chronic diseases.
+                    <br>
+
+                    <br><h3 id = "ReducedRisk">Reduced Risk for Cancer</h3>
+
+                    <img style="width: 740px;  border-radius: 30px; 
+                    height: 285px;float: left;padding-right: 30px;padding-bottom: 30px;"
+                    src = "heartHealth.jpeg" 
+                    alt='Heart Health'>
+
+                    Eating foods that contain antioxidants can help reduce your risk of developing some cancers. Antioxidants 
+                    help protect our bodies cells from damage by removing free radicals, which can cause disease.
+                    <br><br>
+                    Fruits, vegetables, nuts, and legumes contain many phytochemicals, which act as antioxidants.
+                    <br>
+
+                    <br><h3 id = "ImprovedMemory">Improved Memory</h3>
+
+                    Research suggests that a healthy diet might protect against cognitive decline. In one particular 
+                    study, vitamin D, vitamin C, vitamin E, omega fatty acids, fish, polyphenols, and flavonoids were 
+                    all considered beneficial. The healthy eating suggestions previously recommended in this article 
+                    also impart improved memory benefits.
+                    <br><br>
+
+                    <img style="width: 620px;  border-radius: 30px; 
+                    height: 400px;float: right;padding-left: 30px;padding-bottom: 30px;"
+                    src = "Exercise-and-Memory.jpeg" 
+                    alt='Improved Memory'>
+
+                    Many healthy diets have certain characteristics in common:
+                    <br><br>
+
+                    <ul>
+                        <li>Eat more vegetables</li>
+                        <li>Eat fruit</li>
+                        <li>Eat whole grains</li>
+                        <li>Include nuts and seeds</li>
+                        <li>Choose good fats</li>
+                        <li>Eat lean protein</li>
+                    </ul>
+
+
+               
+
+
+
+                </div>
+
+          </div>
+      </main>
+
+
+
+           <!--Scripts-->
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+
+        
+
+    </body>
+
+
+
+    
+</html>

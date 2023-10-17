@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Meals</title>
+
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge,chrome-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+        rel = "stylesheet">
+     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     
+
+        <!-- CSS -->
+     <style>
+
+      main {
+                margin-left: 270px;
+            }
+       
+      .ui-widget-header,.ui-state-default {
+       background:#f5efe5;
+        font-size: 28px;
+        color: #b38b40;
+        text-align: center;
+     }
+
+     .ui-resizable {
+       background:white;
+       border-color: lightsalmon;
+       color: #b38b40;
+       text-align: center;
+     }​
+
+     main {
+             margin-left: 270px;
+         }
+    
+
+  </style>
+  
+  <!-- Javascript -->
+  <script>
+     $(function() {
+        $( "#dialog-1" ).dialog({
+           autoOpen: false,  
+        });
+        $( "#opener" ).click(function() {
+           $( "#dialog-1" ).dialog( "open" );
+        });
+     });
+  </script>
+
+    </head>
+
+    <body class = "home">
+
+         <!-- Side navbar -->
+         <div class="sidenav" style="width:18%;">
+            <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt; margin-top: -10pt; margin-left: -1pt;">Heathy Lifestyle</a>
+            <a href="#Breakfast" class = "btwn">Breakfast</a>
+            <a href="#Lunch" >Lunch</a>
+            <a href="#Dinner" >Dinner</a>
+            <a href="#Snacks" >Snacks</a>
+        </div>
+          <!-- End of side navbar -->
+
+        <!-- Navbar -->
+        <header class = "header">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../main2.html" style = "color: darkorange; font-size: 24pt;">Heathy Lifestyle</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../main2.html" style="color: #b38b40;">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Healthy Eating</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="../Nutrition/diets_main.html">Diets</a>
+                            <a class="dropdown-item" href="advantages.html">Benefits</a>
+                            <a class="dropdown-item" href="../Nutrition/recepies.html">Meals</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="../Sport/benefits.html">Benefits</a>
+                            <a class="dropdown-item" href="../Sport/video-exercises.html">Video Exercises</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../calorie/calorie.html" style="color: #b38b40;">Calorie Calculator</a>
+                        </li>
+                        </ul>
+                        <ul class = "navbar-nav ml-auto">
+                          <button id = "opener" class = "btn" style="font-size: 20px; border: 1.5px solid lightsalmon; 
+                          border-radius: 10px; color:#b38b40;">Get Motivation</button>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+          </header>
+          <!-- End of Navbar -->
+
+          <main> 
+            <div class = "container">
+
+              <div class = "di" id = "dialog-1" title="Motivation">
+                A healthy lifestyle can help you thrive throughout your life. 
+                Making healthy choices isn't always easy. It can be 
+                hard to find the time and energy to exercise regularly or 
+                prepare healthy meals. However, your efforts will pay off 
+                in many ways, and for the rest of your life.
+              </div>
+
+                <div class = "lead">
+
+                    <h1 style = "color: darkorange;text-align: center;"><hr>Easy and Healthy Meals for Breakfast, Lunch, and Dinner<hr></h1><br>
+
+                    
+
+                    <p>
+                        <img style="width: 440px; min-width: 200px;
+                        height: 300px;float: right;padding-left: 30px;padding-bottom: 30px;" src = "eating.jpeg" alt='Eatong'>
+                        <br><br>
+                        Meal planning can be very helpful when trying to eat healthy.
+                        <br><br>
+                        Having a list of go-to meals that are both nutritious and easy to 
+                        make can save you time and money, especially when the recipes use 
+                        pantry staples or long-lasting ingredients that you likely have on hand.
+                        <br><br><br>
+                      </p>
+
+                      <br><h2 id = "Breakfast">Breakfast</h2>
+
+                      <!--accordion-->
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5;"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Overnight Oats
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <img style="width: 450px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "OvernightOats.jpeg" 
+                                alt='Overnight Oats'>
+                                Overnight oats are an easy breakfast option that requires no prep time in the morning. 
+                                Plus, they’re made with basic ingredients that won’t break the bank.
+                                <br><br>
+                                Oats are also a good source of beta glucan fiber, which may help lower your cholesterol 
+                                levels and reduce your risk of heart disease.
+                                <br><br>
+                                There are tons of overnight oat recipes on the internet, but I especially like these basic banana overnight oats.
+                                <br><br>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: #b38b40; background-color: #f5efe5;">
+                                Loaded Avocado Toast
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <img style="width: 430px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "avocado-toast.jpeg" 
+                                alt='Loaded Avocado Toast'>
+                                Avocado toast can be a nutritious breakfast, as avocados are a good source of healthy fats and very filling.
+                                <br><br>
+                                Start with a toasted slice of 100% whole grain, rye, or sourdough bread. In a small bowl, smash together 
+                                half of an avocado with some lime or lemon juice. Spread this on top of the toast.
+                                <br><br>
+                                For a protein boost, add one or two eggs, or smash white beans into the avocado for a vegan option. Top with 
+                                crumbled cheese, chopped nuts, seeds, baby greens, or cherry tomatoes.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: #b38b40; background-color: #f5efe5;">
+                                Broccoli and Cheese Egg Bake
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <img style="width: 470px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "broccoli.jpeg" 
+                                alt='Broccoli and cheese egg bake'>
+                                Eggs are an excellent source of protein, as well as several vitamins and minerals that are important for health.
+                                <br><br>
+                                Make this 12-serving egg bake in advance, and enjoy nutritious leftovers all week long for hassle-free mornings.
+                                <br><br>
+                                It’s a reader favorite on my recipe blog and highly customizable. Feel free to add sliced bell peppers, chopped 
+                                spinach, or mushrooms, and sub any type of cheese or milk you have on hand.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <br><h2 id = "Lunch">Lunch</h2>
+
+                      <!--accordion-->
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5;"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Italian Pasta Salad
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <img style="width: 470px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "pasta-salad.jpeg" 
+                                alt='OItalian Pasta Salad'>
+                                Pasta salad can be a balanced, nutritious meal. It’s often made with cooked pasta, non-starchy 
+                                vegetables, and meat, cheese, or beans. Plus, pasta salad is served cold and keeps well in the fridge and lunch boxes.
+                                <br><br>
+                                Check out this Italian pasta salad for a healthy, affordable option. Add diced chicken, mozzarella 
+                                cheese, or white beans for some protein, and use 100% whole wheat pasta for extra fiber. The olive oil in the 
+                                dressing is also loaded with heart-healthy monounsaturated fats.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: #b38b40; background-color: #f5efe5;">
+                                Sweet Potato Black Bean Meal Prep Bowls
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <img style="width: 420px;  border-radius: 30px; min-width: 200px;
+                                height: 290px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "sweetPotato.jpeg" 
+                                alt='Sweet Potato Black Bean Meal Prep Bowls'>
+                                Taco or burrito bowls make a healthy lunch that’s easy to assemble.
+                                <br><br>
+                                Prepare the ingredients ahead of time, store them in separate containers in the fridge, 
+                                and assemble your bowl when you’re ready to eat. 
+                                <br><br>
+                                The healthy fats in the avocado will help you absorb more fat-soluble nutrients, such 
+                                as the vitamin A carotenoids in sweet potatoes, from the meal.
+                                <br><br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: #b38b40; background-color: #f5efe5;">
+                                Veggie Quesadillas
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <img style="width: 380px;  border-radius: 30px; min-width: 200px;
+                                height: 450px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "Loaded-veggie-quesadillas.jpeg" 
+                                alt='Veggie Quesadillas'>
+                                Veggie quesadillas are one of the easiest recipes to make, and they’re a good way to get kids 
+                                to eat more veggies. Eating vegetables is linked to a lower risk of disease and longer life.
+                                <br><br>
+                                You can use sliced onions and peppers, or any kind of leftover roasted or sautéed veggies that 
+                                you have on hand.
+                                <br><br>
+                                lace a flour or corn tortilla in a skillet over medium heat. Sprinkle one half with shredded 
+                                cheese, then add veggies and more cheese on top. Cook it for a few minutes, with the lid on 
+                                the skillet, until the cheese is melted.
+                                <br><br>
+                                Fold the half of the tortilla without cheese over the other half. Remove it from the skillet, 
+                                slice it into pieces, and enjoy it with guacamole, salsa, or sour cream. Feel free to add beans 
+                                or chicken for more protein.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <br><h2 id = "Dinner">Dinner</h2>
+
+                      <!--accordion-->
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5;"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Caprese Chicken Breasts
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <img style="width: 460px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "chicken.jpeg" 
+                                alt='Caprese Chicken Breasts'>
+                                For a delicious meal that’s on the table in 30 minutes, try chicken breasts made with 
+                                caprese salad ingredients — tomatoes, mozzarella, and basil.
+                                <br><br>
+                                This recipe includes instructions for making them in a single skillet. Make some pasta 
+                                while they cook — or better yet, ahead of time — and you’ll have a balanced meal in no time.
+                                <br><br>
+                                The chicken provides filling protein. Plus, tomatoes are a source of lycopene, an antioxidant 
+                                compound that boosts heart health.
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: #b38b40; background-color: #f5efe5;">
+                                Healthy Mac and Cheese (with veggies)
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <img style="width: 420px;  border-radius: 30px; min-width: 200px;
+                                height: 330px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "macNc.jpeg" 
+                                alt='Healthy Mac and Cheese'>
+                                Mac and cheese is always a crowd-pleaser, and adding veggies to it brings the nutrition up a notch.
+                                <br><br>
+                                Making mac and cheese from scratch also means that you can control the ingredients and avoid excess 
+                                sodium or unnecessary additives.
+                                <br><br>
+                                This healthy mac and cheese is kid-friendly and features both zucchini and cauliflower. It contains 
+                                carbs from pasta, vitamins and minerals from veggies, and protein and fat from the cheese.
+                                <br><br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: #b38b40; background-color: #f5efe5;">
+                                Salmon Burgers With Slaw
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <img style="width: 380px;  border-radius: 30px; min-width: 200px;
+                                height: 330px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "burger.jpeg" 
+                                alt='Salmon burgers with slaw'>
+                                Figuring out how to add more fish to your diet can be intimidating, but this recipe using 
+                                canned salmon makes it a lot easier.
+                                <br><br>
+                                Salmon is one of the best sources of omega-3 fatty acids in the diet. Omega-3s help boost 
+                                brain health and prevent heart-disease-linked plaque buildup in the arteries.
+                                <br><br>
+                                Besides the salmon, these burgers have very basic ingredients and are easy enough for even the 
+                                busiest of nights. Plus, they’re served over a cabbage slaw that counts as your veggies for the meal.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <br><h2 id = "Snacks">Snacks</h2>
+
+                      <!--accordion-->
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" style="color: #b38b40; background-color: #f5efe5;"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Energy Bars
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <img style="width: 420px;  border-radius: 30px; min-width: 200px;
+                                height: 260px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "energy-bars.jpeg" 
+                                alt='Energy Bars'>
+                                Bars make the perfect grab-and-go snack for busy days. But not all bars are created equal 
+                                — many bars masquerading as healthy can actually deliver as much sugar as a candy bar.
+                                <br><br>
+                                Whether you make them yourself or buy them, choose ones that are made mostly from whole foods, 
+                                contain 5g or less added sugar, and contain a mix of protein, fiber, and healthy fats.
+                                <br><br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" 
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: #b38b40; background-color: #f5efe5;">
+                                Chia Pudding
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <img style="width: 480px;  border-radius: 30px; min-width: 200px;
+                                height: 330px; float: left;padding-right: 30px;padding-bottom: 30px;"
+                                src = "chia-pudding.jpeg" 
+                                alt='Chia Pudding'>
+                                These tiny seeds have big health benefits. Just one ounce of chia seeds (about 2 tablespoons) 
+                                contains 9 grams of unsaturated fat (including some omega 3's), 11g of fiber, 4g of protein, 
+                                and are a good source of calcium, magnesium, and phosphorus, along with many antioxidants. 
+                                The high fiber content may also help balance blood sugar, promote gut health, and reduce 
+                                risk for cardiovascular disease.
+                                <br><br>
+                                Chia seeds create a tapioca pudding-like texture when mixed with liquid, making them a snack 
+                                that can feel like dessert. There are dozens of flavor combinations, so get creative or try 
+                                one of our favorites such as Chai Chia Pudding, Apple Cinnamon Chia Pudding or Mango Coconut 
+                                Chia Pudding
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" 
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: #b38b40; background-color: #f5efe5;">
+                                    Walnuts
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                                <img style="width: 500px;  border-radius: 30px; min-width: 200px;
+                                height: 300px; float: right;padding-left: 30px;padding-bottom: 30px;"
+                                src = "walnuts.jpeg" 
+                                alt='Walnuts'>
+                                Need an afternoon mood boost? Grab a handful of walnuts. A recent study showed walnut eaters 
+                                may have lower rates of depression and other research suggests they may improve your mood. 
+                                While all nuts (and seeds) make a healthy snack, "walnuts stand out because they're the only 
+                                tree nut that is an excellent source of the omega-3 fatty acid ALA," says Cassetty. They 
+                                also contain fiber and protein, providing all that you need to stay satisfied between meals.
+                                <br><br>
+                                Cassetty recommends making trail mix with walnuts and dried fruit. If you crave chocolate in 
+                                the afternoon, Lauren Manaker, M.S., RDN, LD has you covered with one of her favorite snacks 
+                                — walnuts dipped in dark chocolate (yes please!). "Since both walnuts and chocolate contain 
+                                magnesium, this is a great treat that also supports your bone health and mood," says Manaker. 
+                                Try these healthy homemade trail mixes with dried fruit, nuts, seeds and yes, chocolate.
+                                <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                </div>
+  
+              
+          </div>
+      </main>
+
+
+           <!--Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+
+    </body>
+    <br>
+    <footer class="page-footer">
+
+      <div class="footer-copyright text-center py-3"> Maintain a Healthy Lifestyle
+        <div>© 2021</div>
+      </div>
+  
+    </footer>
+
+</html>

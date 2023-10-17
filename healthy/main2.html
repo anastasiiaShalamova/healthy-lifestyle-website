@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+      <title>Healthy Lifestyle</title>
+
+      
+
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE-edge,chrome-1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="form.css">
+        <script src = "https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src = "./14-3.js"></script>
+        <link href="pics.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+
+        
+        <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+        rel = "stylesheet">
+     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     
+     <!-- CSS -->
+     <style>
+         .ui-widget-header,.ui-state-default {
+          background:#f5efe5;
+           font-size: 28px;
+           text-align: center;
+           color: #b38b40;
+        }
+
+        .ui-resizable {
+          background:white;
+          border-color: lightsalmon;
+          color: #b38b40;
+          text-align: center;
+        }​
+
+        main{
+          margin: auto;
+        }
+       
+     </style>
+     
+     <!-- Javascript -->
+     <script>
+        $(function() {
+           $( "#dialog-1" ).dialog({
+              autoOpen: false,  
+           });
+           $( "#opener" ).click(function() {
+              $( "#dialog-1" ).dialog( "open" );
+           });
+        });
+     </script>
+
+<script>
+	$(document).ready(function(){
+			var url = "http://api.flickr.com/services/feeds/photos_public.gne?" +
+			          "format=json&jsoncallback=?&tags=waterfall,yosemite";
+	
+			$.getJSON(url, function(data){
+				var html = "";
+				$.each(data.items, function(i, item){
+					html = item.description;
+				});
+				$("#photos").html(html);
+			});          
+        });
+    </script>
+
+        
+
+
+    </head>
+    <body class = "home">
+
+          <!-- Navbar -->
+          <header class = "header">
+            <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-light;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="main2.html" style = "color: darkorange; font-size: 24pt;">Heathy Lifestyle</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                  <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="main2.html" style="color: #b38b40;">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Healthy Eating</a>
+      
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item" href="./Nutrition/diets_main.html">Diets</a>
+                          <a class="dropdown-item" href="./Nutrition/advantages.html">Benefits</a>
+                          <a class="dropdown-item" href="./Nutrition/recepies.html">Meals</a>
+                        </div>
+                    </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" style="color: #b38b40;" id="navbarDropdown1" role="button" 
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sport</a>
+      
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                          <a class="dropdown-item" href="./Sport/benefits.html">Benefits</a>
+                          <a class="dropdown-item" href="./Sport/video-exercises.html">Video Exercises</a>
+                        </div>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./calorie/calorie.html" style="color: #b38b40;">Calorie Calculator</a>
+                      </li>
+                    </ul>
+                    <ul class = "navbar-nav ml-auto">
+                      <button id = "opener" class = "btn" style="font-size: 20px; border: 1.5px solid lightsalmon; 
+                      border-radius: 10px; color:#b38b40;">Get Motivation</button>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </header>
+          <!-- End of Navbar -->
+
+          <img src="banner.jpeg" alt="" class="img1">
+
+          <div class = "container">
+
+
+            <div class = "di" id = "dialog-1" title="Motivation">
+              A healthy lifestyle can help you thrive throughout your life. 
+              Making healthy choices isn't always easy. It can be 
+              hard to find the time and energy to exercise regularly or 
+              prepare healthy meals. However, your efforts will pay off 
+              in many ways, and for the rest of your life.
+            </div>
+
+
+                  <p class = "lead"><br>
+                      Ask 50 people to define what a “healthy lifestyle” is, and you’ll likely get 50 
+                      different answers. That’s because there’s no one way to be healthy. A healthy 
+                      lifestyle simply means doing things that make you happy and feel good. 
+                      <br><br>
+                      For one person, that may mean walking a mile five times a week, eating fast food 
+                      once a week, and spending virtual or in-person time with loved ones every other day. 
+                      For someone else, a healthy lifestyle may be training and running two marathons 
+                      a year, following a keto diet, and never having a sip of alcohol. 
+                      <br><br>
+                      Neither of these is better than the other. Both are perfect for that person. You 
+                      get to decide what your healthy lifestyle looks like.
+                      <br>
+                  </p>
+  
+                  <br><h2 class = "text-center"><hr>How is it Beneficial?<hr></h2><br>
+  
+  
+                  <!-- Accordion -->
+                  <div class="panel-group" id="accordion">
+  
+                      <div class="panel panel-default">
+  
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" style = "color: darksalmon;" id = "benefits" href="#collapse1"> 1. Prevents disease</a>
+                          </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                          <div class="panel-body"><p class = "lead"> Healthy habits can reduce the risk of various diseases, 
+                              including those that may run in your family.
+                              <br><br>
+                              For example, in a recent study, adults who followed a standard American diet 
+                              (rich in fruits and vegetables) for 8 weeks had a reduced risk of cardiovascular 
+                              disease.
+                              <br><br>
+                              In another 2020 study, researchers found that every 66-gram 
+                              increase in daily fruit and vegetable intake was associated with a 25 percent 
+                              lower risk of developing type 2 diabetes.
+                              <br><br>
+                              Swapping out some refined grains for whole grains also reduces the risk of 
+                              disease. In an observational study of almost 200,000 adults, those who ate 
+                              the most whole grains had a 29 percent lower rate of type 2 diabetes than 
+                              those who ate the least.
+                              <br><br>
+                              And a review of 45 studies concluded that eating 90 grams (or three 30-gram 
+                              servings) of whole grains daily reduced the risk of cardiovascular disease 
+                              by 22 percent, coronary heart disease by 19 percent, and cancer by 15 percent.
+                              <br><br>
+                              In terms of exercise, as little as 11 minutes a day may add years to your life. 
+                              In a 2020 study, researchers tracked more than 44,000 adults. Those who got 11 
+                              minutes of moderate-to-vigorous physical activity each day had a lower risk of 
+                              death compared to those who only exercised at that intensity for 2 minutes. 
+                              This comparison held true even if people sat for 8.5 hours every day.</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" style = "color: darksalmon;" href="#collapse2">2. Saves money</a>
+                          </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                          <div class="panel-body"><p class = "lead">It’s always smart to see your primary 
+                              care physician for an annual physical exam. This is especially true seeing 
+                              how some health conditions, such as high blood pressure, are “silent.” This 
+                              means they don’t have any symptoms, so unless you are checked, you usually 
+                              don’t know you have the condition.
+                              <br><br>
+                              However, the healthier you are, the less likely you will have to see a doctor. 
+                              This could save money by reducing co-pays, the need for prescriptions, and 
+                              other treatments.</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" style = "color: darksalmon;" href="#collapse3">3. Lengthens lifespan</a>
+                          </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                          <div class="panel-body"><p class = "lead">Basic healthy habits are connected with 
+                              living a longer life. If, at age 50, you’ve never smoked, maintain a healthy 
+                              weight, are regularly active, follow a healthy diet, and keep alcohol to a 
+                              moderate consumption, you could live up to 14 yearsTrusted Source longer. 
+                              Making even a few of these changes could lengthen your lifespan.</p>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" style = "color: darksalmon;" href="#collapse4">4. It can be good for the environment</a>
+                            </h4>
+                          </div>
+                          <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body"><p class = "lead">Ultra-processed foods are those that 
+                                contain refined grains and additives to change the texture, taste, or color. 
+                                Some examples of these foods are cheese puffs, packaged dessert cakes, 
+                                chicken nuggets, and sweetened breakfast cereals. More than 70 percent of 
+                                foods in U.S. supermarkets are ultra-processed.
+                              <br><br>
+                              The making of ultra-processed foods contributes to greenhouse gas emissions, 
+                              water scarcity, decreased biodiversity, plastic waste, and deforestation.
+                              <br><br>
+                              However, there are easy fixes for this. For example, if every American cut 
+                              their weekly beef consumption by 1/4 pound, the decrease in global warming 
+                              gas emissions would be the equivalent of taking four to six million cars off 
+                              the road, according to the National Resources Defense Council.</p>
+                              
+                            </div>
+                          </div>
+                      </div>
+                  </div> 
+  
+                  <br><h2 class = "text-center"><hr>What is the Easiest Way to Start One?<hr></h2><br>
+                  
+  
+                  <!-- Carousel -->
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+  
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img class="d-block" src="vegetables.jpeg" alt="Eat more vegetables"> 
+                              <div class="carousel-caption d-none d-md-block">
+                                  <h5>Eat more vegetables</h5>
+                                  <p>Consuming more veggies and fruit is associated with lower risk of 
+                                      heart disease, stroke, cancer, and premature death
+                                  </p>
+                              </div>
+                          </div>
+  
+                          <div class="carousel-item">
+                              <img class="d-block" src="active.jpeg" alt="Be more active">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <h5>Be more active</h5>
+                                  <p>The most important thing is to choose an activity you enjoy. Choosing 
+                                      an activity you have an interest in will increase the chances that 
+                                      you’ll stick with it.
+                                  </p>
+                              </div>
+                          </div>
+  
+                          <div class="carousel-item">
+                              <img class="d-block" src="stress.jpeg" alt="Control stress">
+                              <div class="carousel-caption d-none d-md-block">
+                                  <h5>Control stress</h5>
+                                  <p>Chronic stress puts your body into fight-or-flight mode all the time. 
+                                      This taxes your immune system and makes you more susceptible to 
+                                      health problems.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+  
+  
+                  <br><h2 class = "text-center" id = "restaurants"><hr>3 of the Best Heart Healthy Restaurants in Brooklyn<hr></h2><br>
+                  
+                  <!-- Card Dacks -->
+                  <div class="card-deck">
+  
+                      <!-- 1st -->
+                      <div class="card">
+  
+                        <img class="card-img-top" src="greedi_kitchen.jpeg" alt="Greedi Kitchen">
+  
+                        <div class="card-body">
+                          <h5 class="card-title">Greedi Kitchen</h5>
+                          <p class="card-text">This fast-casual vegan restaurant pulls from 
+                              the tastes of the American south as well as global cuisine, 
+                              making the heart-healthy food at Greedi a culinary staycation 
+                              with a passport. Seasonal, local and sustainable ingredients 
+                              are combined in exciting new ways that might even covert 
+                              carnivores into the heart-healthy vegan lifestyle. Don’t miss 
+                              the Greedi Soul Bowl and portobello mushroom sliders.</p>
+                        </div>
+  
+                        <a href="https://www.greedi-kitchen.com/" class="btn btn-primary" style = "background-color: darksalmon; border-color: lightsalmon;">Visit Their Website</a>
+                        
+                      </div>
+  
+                      <!-- 2nd -->
+                      <div class="card">
+  
+                        <img class="card-img-top" src="whole_bowl.jpeg" alt="The Whole Bowl">
+  
+                        <div class="card-body">
+                          <h5 class="card-title">The Whole Bowl</h5>
+                          <p class="card-text">The Whole Bowl’s tagline is “It’s like eating a 
+                              hug.” Give your body a health-inducing hug with this Williamsburg 
+                              staple’s bowl concept. All bowls are nut, gluten, wheat, hydrogenated 
+                              oil and guilt free. Start with brown rice and add Tillamook cheddar, 
+                              sour cream, cilantro, avocado, black olives, black and red beans, 
+                              salsa and mysterious Tali sauce for a heart-healthy full-belly.</p>
+                        </div>
+  
+                        <a href="http://thewholebowl.com/brooklyn.html" class="btn btn-primary" style = "background-color: darksalmon; border-color: lightsalmon;">Visit Their Website</a>
+  
+                      </div>
+  
+                      <!-- 3rd -->
+                      <div class="card">
+  
+                        <img class="card-img-top" src="nurish.jpeg" alt="Nurish">
+  
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">If you’re looking for places to eat healthy in 
+                              Brooklyn, don’t miss Nurish in Prospect Heights. This vegetarian 
+                              cafe offers sustainable meat choices as well as vegan options to 
+                              please everyone in your party. Nurish’s clean, healthy food options 
+                              aren’t just delicious, they’re affordable, too. Grab an organic 
+                              green juice or smoothie to go, or luxuriate over a leisurely brunch 
+                              or all-day breakfast of acai bowls.”</p>
+                        </div>
+  
+                        <a href="https://www.nurishbk.com/" class="btn btn-primary"style = "background-color: darksalmon; border-color: lightsalmon;" >Visit Their Website</a>
+                        
+                      </div>
+  
+                    </div>
+  
+              <br><h2 class = "text-center" id = "bottom"><hr>The Bottom Line<hr></h2><br>
+  
+                  <p class = "lead">
+                      A healthy lifestyle can not only help you feel better, but it can also reduce the 
+                      risk of some diseases, lengthen your lifespan, save you money, and benefit the environment.
+                      <br><br>
+                      Your version of a healthy lifestyle is whatever you define it to be. There’s nothing you 
+                      must or must not do in order to be healthy. Identify what makes you feel good and what 
+                      brings you the greatest happiness. Then, start small when you make changes. You’re more 
+                      likely to see success this way, and small successes will snowball into bigger benefits.
+                      <br><br>
+                      Lastly, if you want help with making any lifestyle changes, talk to your doctor. If they 
+                      can’t directly help you, they may recommend other professionals, like registered dietitians 
+                      or therapists.
+                      <br><br>
+                      <hr>
+                      <h4>This Website is Supported by <a href="https://www.flickr.com/">Flickr</a></h4><br>
+                      Flickr is a media platform used for uploading, organizing, and sharing 
+                      digital media such as photos and videos. Flickr is not just for professionals. 
+                      Even those who have a casual interest in photography can peruse the digital 
+                      galleries and discover creative photography.<br>
+                      <div  id="photos"></div><hr>
+
+                  </p>
+
+                  <br><h2 class = "text-center" id = "bottom"><hr>Contact Us<hr></h2><br>
+                  <p class = "lead" style = " text-align: center;">
+                    If you have any questions, fill out the form below. We'll get back to you as soon as possible!
+                  </p>
+
+
+                  <form id = "email_form" name = "email_form" action = "action.html" method = "get">
+                    <label for = "first_name">First Name:</label>
+                    <input type = "text" id = "first_name" name = "first_name">
+                    <span>&nbsp;</span>
+                    <br>   
+                    <label for = "last_name">Last Name:</label>
+                    <input type = "text" id = "last_name" name = "last_name">
+                    <span>&nbsp;</span>
+                    <br>
+                    <label for = "email_1">Email Address:</label>
+                    <input type = "text" id = "email_1" name = "email_1">
+                    <span>&nbsp;</span>
+                    <br>     
+                    <label for = "email_2">Re-enter Email:</label>
+                    <input type = "text" id = "email_2" name = "email_2">
+                    <span>&nbsp;</span>
+                    <br>       
+                    <label for = "state">State Code:</label>
+                    <input type = "text" id = "state" name = "state" placeholder = "2-character code">
+                    <span>&nbsp;</span>
+                    <br>     
+                    <label for = "zip">Zip Code:</label>
+                    <input type = "text" id = "zip" name = "zip" placeholder = "99999">
+                    <span>&nbsp;</span>
+                    <br> 
+                    <label for = "task">Message:</label>
+                    <input type = "text" name = "task" id = "task">
+                    <br>
+                    <label>&nbsp;</label>
+                    <input type = "submit" id = "join" name = "join" value = "Contact">
+                    
+                </form>
+
+
+
+
+
+                 
+  
+          </div>
+          
+        <!--Scripts-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+        crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+
+        
+    </body>
+
+  <footer class="page-footer">
+
+    <div class="footer-copyright text-center py-3"> Maintain a Healthy Lifestyle
+      <div>© 2021</div>
+    </div>
+
+  </footer>
+
+</html>

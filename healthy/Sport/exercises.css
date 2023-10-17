@@ -1,0 +1,26 @@
+.cart {
+    margin-top: 0.5em;
+    float: right;
+  }
+  
+
+  .isRed {
+    color: red;
+  }
+button {
+    box-shadow: 0px 0px 0px  transparent;
+    background: white;
+    border-color: white;
+    color: darkorange;
+    border-bottom: white;
+    border-right: white;
+}
+
+button:hover{
+    border-top: white;
+    border-left: white;
+}
+
+.right{
+    float: left;
+}
